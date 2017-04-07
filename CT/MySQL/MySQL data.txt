@@ -1,0 +1,19 @@
+create table statistieken (
+statisticid varchar(40),
+statistictype varchar(40)
+j2006 integer,
+j2007 integer,
+j2008 integer,
+j2009 integer,
+j2011 integer,
+primary key(statisticid)
+);
+
+create table locaties (
+locationid varchar(40),
+locationname varchar(40),
+region varchar(40),
+primary key(locationid)
+);
+
+
