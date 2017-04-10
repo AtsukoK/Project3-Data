@@ -16,4 +16,11 @@ region varchar(40),
 primary key(locationid)
 );
 
-
+create table statistiekenfietsendiefstal(
+statisticid varchar(60),
+j2006 integer,
+j2007 integer,
+j2008 integer,
+j2009 integer,
+j2011 integer,
+primary key(statisticid)
