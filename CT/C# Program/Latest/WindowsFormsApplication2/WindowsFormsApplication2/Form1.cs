@@ -22,9 +22,9 @@ namespace WindowsFormsApplication2
         {
              this.chart1.Series["Procent"].Points.AddXY("j2006", "locatie");
 
-            string constring = "datasource=localhost;port=3306;username=root;=2048";
+            string constring = "datasource=localhost;port=3306;username=root;password=2048";
             MySqlConnection conDataBase=new MySqlConnection(constring);
-            MySqlCommand cmdDatabase = new MySqlCommand(" Select * from database.veiligheidsindex ;", conDataBase);
+            MySqlCommand cmdDatabase = new MySqlCommand(" Select * from veiligheidsindex.statistieken ;", conDataBase);
             MySqlDataReader myReader;
             try
             {
