@@ -1,0 +1,17 @@
+before adding the charts, empty it (PO did it for us)
+
+location table were you store feyenoord (make second table merge only with querries)
+
+regio bring it out if you want to know location
+
+do it with querries
+
+location schould be the primarykey
+
+regio put in the location table (the regio should be asserted to feyenoordor noord)
+
+you can make querries to populate locations with insert (source table
+
+insert into locations atributes locate regio from (select locatie from regio
+
+from statistics group by locations regio
