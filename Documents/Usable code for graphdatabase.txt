@@ -1,0 +1,91 @@
+private void Load_button_Click(object sender, EventArgs e)
+{
+    SqlConnection con = new SqlConnection("server = MUNESH;Database=datastore;UID=sa;Password=123;");
+    SqlCommand cmd = new SqlCommand("Select * from data1", con);
+    DataReader mydatareader ;
+    try
+    {
+        con.Open();
+        myreader = cmd.ExecuteReader();
+        while(myreader.Read())
+        {
+            this.chart1.Series["Age"].Points.AddXY(myreader.GetString("name"),myreader.GetInt32("Age"));
+        }
+    }
+    Catch(Exception ex)
+    {
+        MessageBox.show(ex.message);
+    }
+
+
+------------------------------------------------------------------------------------------------
+
+// The Access database
+string fileNameString = "data\\chartdata.mdb";
+
+// Initialize a connection string   
+string myConnectionString = "Data Source=" + fileNameString;
+
+// Define the database query    
+string mySelectQuery="SELECT Name, Sales FROM REPS ;";
+
+// Create a database connection object using the connection string  
+SqlConnection myConnection = new SqlConnection(myConnectionString);
+
+// Create a database command on the connection using query  
+SqlCommand myCommand = new sqlCommand(mySelectQuery, myConnection);
+
+// Open the connection  
+myCommand.Connection.Open();
+
+// Create a database reader 
+SqlDataReader myReader = myCommand.ExecuteReader(CommandBehavior.CloseConnection);
+
+chart1.Series["Default"].Points.DataBindXY(myReader, "Name", myReader, "Sales");
+
+// Close the reader and the connection
+myReader.Close();
+myConnection.Close();
+
+
+------------------------------------------------------------------------------------------------
+public static string DB_NAME = "mydb"; //you don't need an extension here, this is the db name not a filename
+public static string DB_PATH = "C:\\data\\";
+
+public bool CreateDatabase()
+{
+    bool stat=true;
+    string sqlCreateDBQuery;
+    SqlConnection myConn = new SqlConnection("Server=localhost\\SQLEXPRESS;Integrated security=SSPI;database=master;");
+
+    sqlCreateDBQuery = " CREATE DATABASE "
+                        + DB_NAME
+                        + " ON PRIMARY "
+                        + " (NAME = " + DB_NAME + "_Data, "
+                        + " FILENAME = '" + DB_PATH + DB_NAME + ".mdf', "
+                        + " SIZE = 2MB,"
+                        + " FILEGROWTH = 10%) "
+                        + " LOG ON (NAME =" + DB_NAME + "_Log, "
+                        + " FILENAME = '" + DB_PATH + DB_NAME + "Log.ldf', "
+                        + " SIZE = 1MB, "
+                        + " FILEGROWTH = 10%) ";
+
+    SqlCommand myCommand = new SqlCommand(sqlCreateDBQuery, myConn);
+    try
+    {
+        myConn.Open();
+        myCommand.ExecuteNonQuery();
+    }
+    catch (System.Exception)
+    {
+        stat=false;
+    }
+    finally
+    {
+        if (myConn.State == ConnectionState.Open)
+        {
+            myConn.Close();
+        }
+        myConn.Dispose();
+    }
+    return stat;

@@ -1,0 +1,13 @@
+taken opsplitsen! sprint2
+
+ik visualizeren in sprint
+
+iedereen maakt log boek voor zichzelf
+
+nog even naar ERD kijken
+
+diefstallen apparte tabel type index
+
+of extra attribute met de type erin(value)
+
+primary key als nummer behouden(ergens vastleggen de soort statestiek)
