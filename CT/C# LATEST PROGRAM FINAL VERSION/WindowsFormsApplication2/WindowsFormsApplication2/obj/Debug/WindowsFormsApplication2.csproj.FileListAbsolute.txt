@@ -36,3 +36,15 @@ C:\Users\K.Kirika\Documents\Visual Studio 2015\Projects\C# Program latest versio
 C:\Users\K.Kirika\Documents\Visual Studio 2015\Projects\C# Program latest version 4-18-2017 incl web\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Form2.resources
 C:\Users\K.Kirika\Documents\Visual Studio 2015\Projects\C# Program latest version 4-18-2017 incl web\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
 C:\Users\K.Kirika\Documents\Visual Studio 2015\Projects\C# Program latest version 4-18-2017 incl web\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
+C:\Users\K.Kirika\Documents\Visual Studio 2015\Projects\C# LATEST PROGRAM FINAL VERSION\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe.config
+C:\Users\K.Kirika\Documents\Visual Studio 2015\Projects\C# LATEST PROGRAM FINAL VERSION\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.exe
+C:\Users\K.Kirika\Documents\Visual Studio 2015\Projects\C# LATEST PROGRAM FINAL VERSION\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.pdb
+C:\Users\K.Kirika\Documents\Visual Studio 2015\Projects\C# LATEST PROGRAM FINAL VERSION\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.exe
+C:\Users\K.Kirika\Documents\Visual Studio 2015\Projects\C# LATEST PROGRAM FINAL VERSION\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\WindowsFormsApplication2.pdb
+C:\Users\K.Kirika\Documents\Visual Studio 2015\Projects\C# LATEST PROGRAM FINAL VERSION\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\MySql.Data.dll
+C:\Users\K.Kirika\Documents\Visual Studio 2015\Projects\C# LATEST PROGRAM FINAL VERSION\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\MySql.Web.dll
+C:\Users\K.Kirika\Documents\Visual Studio 2015\Projects\C# LATEST PROGRAM FINAL VERSION\WindowsFormsApplication2\WindowsFormsApplication2\bin\Debug\MySql.Web.xml
+C:\Users\K.Kirika\Documents\Visual Studio 2015\Projects\C# LATEST PROGRAM FINAL VERSION\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Form1.resources
+C:\Users\K.Kirika\Documents\Visual Studio 2015\Projects\C# LATEST PROGRAM FINAL VERSION\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Form2.resources
+C:\Users\K.Kirika\Documents\Visual Studio 2015\Projects\C# LATEST PROGRAM FINAL VERSION\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
+C:\Users\K.Kirika\Documents\Visual Studio 2015\Projects\C# LATEST PROGRAM FINAL VERSION\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.csproj.GenerateResource.Cache
