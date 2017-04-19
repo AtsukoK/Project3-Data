@@ -24,7 +24,7 @@ namespace WindowsFormsApplication2
 
             string constring = "datasource=localhost;port=3306;username=root;password=2048";
             MySqlConnection conDataBase = new MySqlConnection(constring);
-            MySqlCommand cmdDatabase = new MySqlCommand(" Select j2006,locatie from veiligheidsindex.statistieken ;", conDataBase);
+            MySqlCommand cmdDatabase = new MySqlCommand(" Select j2006,locatie,datasoort from veiligheidsindex.statistieken,veiligheidsindex.locaties where datasoort = 'autodiefstal' ;", conDataBase);
             MySqlDataReader myReader;
             try
             {
@@ -54,7 +54,7 @@ namespace WindowsFormsApplication2
 
             string constring = "datasource=localhost;port=3306;username=root;password=2048";
             MySqlConnection conDataBase = new MySqlConnection(constring);
-            MySqlCommand cmdDatabase = new MySqlCommand(" Select * from veiligheidsindex.statistieken where id = 1 ;", conDataBase);
+            MySqlCommand cmdDatabase = new MySqlCommand(" Select j2006,locatie from veiligheidsindex.statistieken,veiligheidsindex.locaties where datasoort = 'fietsdiefstal'  ;", conDataBase);
             MySqlDataReader myReader;
             try
             {
@@ -64,7 +64,7 @@ namespace WindowsFormsApplication2
 
                 while (myReader.Read())
                 {
-                    this.chart1.Series["Procent"].Points.AddXY(myReader.GetString("locatie"), myReader.GetInt32("j2011"));
+                    this.chart1.Series["Procent"].Points.AddXY(myReader.GetString("locatie"), myReader.GetInt32("j2006"));
                 }
             }
 
@@ -132,5 +132,32 @@ namespace WindowsFormsApplication2
         {
 
         }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            this.chart2.Series["Procent"].Points.AddY("locatie");
+
+            string constring = "datasource=localhost;port=3306;username=root;password=2048";
+            MySqlConnection conDataBase = new MySqlConnection(constring);
+            MySqlCommand cmdDatabase = new MySqlCommand(" Select j2011,locatie from veiligheidsindex.statistieken,veiligheidsindex.locaties where id = 1 and regio = 'Noord' ;", conDataBase);
+            MySqlDataReader myReader;
+            try
+            {
+                conDataBase.Open();
+                myReader = cmdDatabase.ExecuteReader();
+                this.chart2.Series["Procent"].Points.Clear();
+
+                while (myReader.Read())
+                {
+                    this.chart2.Series["Procent"].Points.AddXY(myReader.GetString("locatie"), myReader.GetInt32("j2011"));
+                }
+            
+            }
+            finally
+            {
+
+            }
+        }
+
     }
 }

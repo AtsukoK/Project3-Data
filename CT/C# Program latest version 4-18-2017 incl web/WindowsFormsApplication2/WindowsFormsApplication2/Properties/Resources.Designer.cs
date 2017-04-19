@@ -69,5 +69,15 @@ namespace WindowsFormsApplication2.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2017_04_12_14_40_56 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_2017-04-12-14-40-56", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
